@@ -1,0 +1,12 @@
+{{#if company}}
+
+    {{> companies/companiesPartial company}}
+
+    <p>Comments</p>
+    {{!-- removing each that is outside because really we need the each to go around the comments not the company--}}
+    {{> comments/commentsPartial comments=company.allComments }}
+    <hr>
+
+    {{> comments/commentsForm }}
+
+{{/if}}

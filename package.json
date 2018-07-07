@@ -1,0 +1,31 @@
+{
+  "name": "company",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "dev": "nodemon -e hbs,js app.js",
+    "seeds": "node ./bin/seeds.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "hbs": "^4.0.1",
+    "http-errors": "^1.6.3",
+    "moment": "^2.22.2",
+    "mongoose": "^5.1.7",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "nodemon": "^1.17.5"
+  }
+}

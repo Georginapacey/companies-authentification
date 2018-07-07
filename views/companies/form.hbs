@@ -1,0 +1,23 @@
+{{#if errors }}
+    {{> formErrors errors}}
+{{/if}}
+{{!-- En verification.js llamamos a este data-errors --}}
+<form data-errors='{{{json errors}}}' action="/companies/create" method="POST">
+    <div class="form-group">
+        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" value="{{company.name}}">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="code" placeholder="Enter code" name="code" value="{{company.code}}">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="image" placeholder="Enter url" name="image" value="{{company.image}}">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="money" placeholder="Enter money" name="money"  value="{{company.money}}">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control invalid" id="description" placeholder="Enter description" name="description" value="{{company.description}}">
+    </div>
+    <button type="submit">Submit</button>
+    
+</form>
